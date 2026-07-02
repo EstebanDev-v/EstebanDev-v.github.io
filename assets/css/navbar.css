@@ -14,6 +14,8 @@ header{
 
     z-index:100;
 
+    height:var(--header-height);
+
 }
 
 .navbar{
