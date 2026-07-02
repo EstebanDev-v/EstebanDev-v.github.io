@@ -1,3 +1,27 @@
+/* ===========================
+Variables
+=========================== */
+
+:root{
+    
+    --bg:#0b0f17;
+    --bg2:#131926;
+    
+    --text:#f8fafc;
+    --text-secondary:#b8c0cc;
+    
+    --green:#8EF7B8;
+    --green-dark:#49d17d;
+    
+    --pink:#F6A6C9;
+    --pink-dark:#E57FB0;
+
+    --border:rgba(255,255,255,.08);
+    
+    --glass:rgba(255,255,255,.04);
+    
+}
+
 /* ===== Reset ===== */
 
 *{
@@ -14,7 +38,7 @@ body{
 
     font-family:Inter,Arial,sans-serif;
 
-    background:#0b1120;
+    background:var(--bg);
 
     color:#ffffff;
 
@@ -54,7 +78,12 @@ body::after{
 
     height:700px;
 
-    background:radial-gradient(#2563eb55, transparent 70%);
+    background:
+    radial-gradient(
+    circle,
+    rgba(142,247,184,.18),
+    transparent 70%
+    );
 
     top:-250px;
 
@@ -106,7 +135,14 @@ header{
 
     font-weight:bold;
 
-    color:#3b82f6;
+    background:linear-gradient(
+    90deg,
+    var(--green),
+    var(--pink)
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 
 }
 
@@ -132,7 +168,7 @@ header{
 
 .navbar a:hover{
 
-    color:#60a5fa;
+    color:var(--green);
 
 }
 
@@ -182,7 +218,7 @@ header{
 
     margin-top:15px;
 
-    color:#94a3b8;
+    color:var(--green);
 
     font-weight:400;
 
@@ -194,7 +230,7 @@ header{
 
     margin-top:30px;
 
-    color:#cbd5e1;
+    color:var(--text-secondary);
 
     line-height:1.8;
 
@@ -214,9 +250,15 @@ header{
 
 .btn{
 
-    background:#2563eb;
+   background:linear-gradient(
+    90deg,
+    var(--green),
+    var(--green-dark)
+    );
 
-    color:white;
+    color:#08110c;
+
+    font-weight:700;
 
     text-decoration:none;
 
@@ -236,9 +278,9 @@ header{
 
 .btn-secundario{
 
-    color:white;
+    border:1px solid var(--pink);
 
-    border:1px solid #3b82f6;
+    color:var(--pink);
 
     text-decoration:none;
 
@@ -246,4 +288,45 @@ header{
 
     border-radius:8px;
 
+}
+
+/* ===== Tecnologías ===== */
+
+.tech-stack{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    margin-top:35px;
+
+}
+
+.tech-stack span{
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(246,166,201,.35);
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    transition:.3s;
+
+    font-size:14px;
+
+}
+
+.tech-stack span:hover{
+
+    background:rgba(246,166,201,.12);
+
+    border-color:var(--pink);
+
+    transform:translateY(-6px);
 }
