@@ -1,18 +1,22 @@
 .hero{
 
-    height:100vh;
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero .container{
 
     display:flex;
 
     flex-direction:column;
 
-    justify-content:center;
-
     align-items:center;
 
-    text-align:center;
-
-}
+}   
 
 .saludo{
 
@@ -26,9 +30,24 @@
 
 .hero h1{
 
-    font-size:72px;
+    font-size:clamp(3rem,8vw,6rem);
+
+    font-weight:800;
+
+    line-height:1;
 
     margin-top:10px;
+
+    background:linear-gradient(
+        90deg,
+        #ffffff,
+        var(--pink),
+        var(--green)
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
 
 }
 
@@ -53,5 +72,51 @@
     line-height:1.8;
 
     max-width:700px;
+
+}
+
+.scroll-indicator{
+
+    margin-top:80px;
+
+}
+
+.scroll-indicator span{
+
+    display:block;
+
+    width:22px;
+
+    height:40px;
+
+    border:2px solid var(--green);
+
+    border-radius:20px;
+
+    position:relative;
+
+}
+
+.scroll-indicator span::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:5px;
+
+    height:5px;
+
+    background:var(--green);
+
+    border-radius:50%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    top:8px;
+
+    animation:scroll 1.5s infinite;
 
 }

@@ -29,27 +29,22 @@ body::before{
     z-index:-2;
 
 }
-
 body::after{
 
     content:"";
 
     position:fixed;
 
-    width:700px;
-
-    height:700px;
+    inset:0;
 
     background:
-    radial-gradient(
-        circle,
-        rgba(142,247,184,.18),
-        transparent 70%
-    );
+        radial-gradient(circle at 15% 25%,
+            rgba(142,247,184,.18),
+            transparent 35%),
 
-    top:-250px;
-
-    right:-250px;
+        radial-gradient(circle at 85% 10%,
+            rgba(246,166,201,.15),
+            transparent 35%);
 
     z-index:-1;
 
