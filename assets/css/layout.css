@@ -1,0 +1,66 @@
+body{
+
+    font-family:Inter, Arial, sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+/* Fondo */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+
+    background-size:40px 40px;
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:700px;
+
+    height:700px;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(142,247,184,.18),
+        transparent 70%
+    );
+
+    top:-250px;
+
+    right:-250px;
+
+    z-index:-1;
+
+}
+
+/* Contenedor reutilizable */
+
+.container{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+}

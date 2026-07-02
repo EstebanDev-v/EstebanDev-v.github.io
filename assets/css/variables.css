@@ -1,0 +1,19 @@
+:root{
+
+    --bg:#0b0f17;
+    --bg2:#131926;
+
+    --text:#f8fafc;
+    --text-secondary:#b8c0cc;
+
+    --green:#8EF7B8;
+    --green-dark:#49d17d;
+
+    --pink:#F6A6C9;
+    --pink-dark:#E57FB0;
+
+    --border:rgba(255,255,255,.08);
+
+    --glass:rgba(255,255,255,.04);
+
+}
