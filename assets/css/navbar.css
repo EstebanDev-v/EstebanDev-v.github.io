@@ -6,9 +6,11 @@ header{
 
     top:0;
 
-    backdrop-filter:blur(12px);
+    left:0;
 
-    background:rgba(11,17,32,.65);
+    backdrop-filter:blur(14px);
+
+    background:rgba(11,15,23,.75);
 
     border-bottom:1px solid rgba(255,255,255,.05);
 
@@ -20,21 +22,23 @@ header{
 
 .navbar{
 
+    height:100%;
+
     display:flex;
 
     justify-content:space-between;
 
     align-items:center;
 
-    padding:22px 0;
-
 }
 
 .logo{
 
-    font-size:28px;
+    font-size:1.9rem;
 
-    font-weight:bold;
+    font-weight:800;
+
+    letter-spacing:-1px;
 
     background:linear-gradient(
         90deg,
@@ -51,7 +55,7 @@ header{
 
     display:flex;
 
-    gap:35px;
+    gap:2rem;
 
     list-style:none;
 
@@ -59,11 +63,13 @@ header{
 
 .navbar a{
 
-    color:white;
+    font-size:1rem;
+
+    font-weight:500;
+
+    color:var(--text);
 
     text-decoration:none;
-
-    position:relative;
 
     transition:var(--transition);
 
