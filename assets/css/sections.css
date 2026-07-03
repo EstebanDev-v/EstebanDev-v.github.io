@@ -284,3 +284,81 @@
     font-size:.8rem;
 
 }
+
+/*==================================
+        PROJECTS
+==================================*/
+
+.projects{
+
+    padding:120px 0;
+
+}
+
+.container{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    color:var(--green);
+
+    font-size:.9rem;
+
+    letter-spacing:2px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.projects h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+}
+
+.section-description{
+
+    max-width:720px;
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+    margin-bottom:70px;
+
+}
+
+.featured-project{
+
+    min-height:500px;
+
+    border-radius:24px;
+
+    border:1px solid var(--border);
+
+    background:var(--glass);
+
+    margin-bottom:80px;
+
+}
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:35px;
+
+}
