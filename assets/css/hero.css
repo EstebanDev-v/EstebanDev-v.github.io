@@ -10,6 +10,8 @@
 
     padding-top:calc(var(--header-height) + 3rem);
 
+    position:relative;
+
 }
 
 .hero .container{
@@ -87,7 +89,13 @@
 
 .scroll-indicator{
 
-    margin-top:80px;
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
 
 }
 

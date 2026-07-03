@@ -6,35 +6,39 @@ header{
 
     top:0;
 
-    left:0;
+    height:72px;
 
-    backdrop-filter:blur(14px);
+    backdrop-filter:blur(16px);
 
     background:rgba(11,15,23,.75);
 
     border-bottom:1px solid rgba(255,255,255,.05);
 
-    z-index:100;
-
-    height:var(--header-height);
+    z-index:1000;
 
 }
 
 .navbar{
 
+    max-width:1200px;
+
     height:100%;
+
+    margin:auto;
 
     display:flex;
 
+    align-items:center;
+
     justify-content:space-between;
 
-    align-items:center;
+    padding:0 28px;
 
 }
 
 .logo{
 
-    font-size:1.9rem;
+    font-size:24px;
 
     font-weight:800;
 
@@ -55,7 +59,7 @@ header{
 
     display:flex;
 
-    gap:2rem;
+    gap: 28px;
 
     list-style:none;
 
@@ -63,7 +67,7 @@ header{
 
 .navbar a{
 
-    font-size:1rem;
+    font-size:15px;
 
     font-weight:500;
 
