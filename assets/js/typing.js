@@ -4,7 +4,7 @@ function initTyping(){
 
     if(!element) return;
 
-    const text = "Desarrollador Full Stack";
+    const text = "Desarrollador Full Stack especializado en crear soluciones para optimizar procesos.";
 
     let index = 0;
 
