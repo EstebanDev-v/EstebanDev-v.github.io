@@ -27,12 +27,12 @@
     }
 
     .timeline {
-        overflow-x:hidden;
+        overflow-x:visible;
         padding-left:1.5rem;
     }
 
     .timeline-item::before {
-        left:-0.5rem;
+        left:1rem;
     }
 
     .hero {
@@ -124,7 +124,7 @@
     }
 
     .timeline-item::before {
-        left:-0.75rem;
+        left:1rem;
     }
 
     .hero h1 {
