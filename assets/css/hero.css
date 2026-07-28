@@ -1,140 +1,90 @@
 .hero{
-
     min-height:100vh;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     padding-top:calc(var(--header-height) + 3rem);
-
     position:relative;
-
 }
 
 .hero .container{
-
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
-}   
+    text-align:center;
+    gap:1rem;
+}
 
 .saludo{
-
     color:var(--green);
-
     font-size:.9rem;
-
     font-weight:600;
-
     letter-spacing:3px;
-
     text-transform:uppercase;
-
-    margin-bottom:15px;
-
+    margin-bottom:0;
 }
 
 .hero h1{
-
-    font-size:clamp(3.5rem,7vw,5.5rem);
-
+    font-size:clamp(2.8rem,7vw,5.5rem);
     line-height:1.1;
-
     font-weight:800;
-
-    margin-top:10px;
-
-    background:linear-gradient(
-        90deg,
-        #ffffff,
-        var(--pink),
-        var(--green)
-    );
-
+    margin-top:0;
+    background:linear-gradient(90deg, #ffffff, var(--pink), var(--green));
     -webkit-background-clip:text;
-
     -webkit-text-fill-color:transparent;
-
 }
 
 .hero h2{
-
-    margin-top:15px;
-
+    margin-top:0;
     color:var(--green);
-
     font-weight:400;
-
-    font-size:34px;
-
+    font-size:clamp(1.25rem, 3vw, 2.1rem);
+    line-height:1.4;
+    max-width:780px;
 }
 
 .descripcion{
-
-    margin-top:30px;
-
+    margin-top:0;
     color:var(--text-secondary);
-
     line-height:1.8;
-
     max-width:700px;
+    font-size:1rem;
+}
 
+.botones{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:1.5rem;
+    width:100%;
 }
 
 .scroll-indicator{
-
-    position: absolute;
-
-    bottom: 30px;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
+    position:absolute;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%);
 }
 
 .scroll-indicator span{
-
     display:block;
-
     width:22px;
-
     height:40px;
-
     border:2px solid var(--green);
-
     border-radius:20px;
-
     position:relative;
-
 }
 
 .scroll-indicator span::before{
-
     content:"";
-
     position:absolute;
-
     width:5px;
-
     height:5px;
-
     background:var(--green);
-
     border-radius:50%;
-
     left:50%;
-
     transform:translateX(-50%);
-
     top:8px;
-
     animation:scroll 1.5s infinite;
-
 }
