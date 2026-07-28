@@ -32,7 +32,11 @@
     }
 
     .timeline-item::before {
-        left:1rem;
+        display:none;
+    }
+
+    .timeline-year {
+        margin-left:2.5rem;
     }
 
     .hero {
@@ -67,11 +71,6 @@
 
     .timeline-item {
         margin-bottom:1.5rem;
-    }
-
-    .timeline-item::before {
-        left:0;
-        top:-10px;
     }
 
     .timeline-card {
@@ -124,7 +123,11 @@
     }
 
     .timeline-item::before {
-        left:1rem;
+        display:none;
+    }
+
+    .timeline-year {
+        margin-left:2rem;
     }
 
     .hero h1 {

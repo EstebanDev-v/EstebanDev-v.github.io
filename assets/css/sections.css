@@ -136,25 +136,31 @@
 }
 
 .timeline-item::before{
-    content:"";
-    position:absolute;
-    left:0;
-    top:5px;
-    width:18px;
-    height:18px;
-    border-radius:50%;
-    background:var(--green);
-    box-shadow:0 0 18px rgba(142,247,184,.5);
-    transform:translateX(-50%);
+    display:none;
 }
 
 .timeline-year{
+    position:relative;
     color:var(--green);
     font-size:.9rem;
     font-weight:700;
     margin-bottom:15px;
     letter-spacing:2px;
-    margin-left:40px;
+    margin-left:34px;
+    padding-left:30px;
+}
+
+.timeline-year::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:50%;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:var(--green);
+    box-shadow:0 0 18px rgba(142,247,184,.5);
+    transform:translateY(-50%);
 }
 
 .timeline-card{
