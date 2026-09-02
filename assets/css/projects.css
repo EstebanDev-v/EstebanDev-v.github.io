@@ -52,6 +52,34 @@
 ========================================================= */
 
 .project-image{
+    position:relative;
+
+    color:var(--text-secondary);
+
+    font-size:.8rem;
+    font-weight:600;
+
+    letter-spacing:.5px;
+}
+
+.project-image::before{
+    content:"";
+
+    position:absolute;
+
+    width:160px;
+    height:160px;
+
+    border-radius:50%;
+
+    background:var(--green);
+
+    opacity:.05;
+
+    filter:blur(50px);
+}
+
+/* .project-image{
     width:340px;
     min-height:220px;
 
@@ -70,7 +98,7 @@
         );
 
     overflow:hidden;
-}
+} */
 
 
 .project-image img{
@@ -613,6 +641,12 @@
     line-height:1.75;
 }
 
+.project-meta{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:14px;
+}
 
 /* =========================================================
    RESPONSIVE
