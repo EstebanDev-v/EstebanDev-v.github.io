@@ -580,3 +580,17 @@
     }
 
 }
+
+@media (max-width:900px){
+
+    .featured-project-preview{
+        min-height:auto;
+
+        padding:18px;
+    }
+
+    .preview-secondary{
+        display:none;
+    }
+
+}
