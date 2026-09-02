@@ -234,26 +234,242 @@
 
 
 .featured-project-preview{
-    min-height:360px;
+    position:relative;
 
-    border-radius:20px;
-
-    border:1px solid var(--border);
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(142,247,184,.10),
-            rgba(246,166,201,.08)
-        );
+    min-height:420px;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    color:var(--text-secondary);
+    padding:22px 22px 50px;
+
+    border-radius:22px;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(142,247,184,.10),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(246,166,201,.08),
+            transparent 40%
+        ),
+        rgba(255,255,255,.015);
+
+    border:1px solid var(--border);
 
     overflow:hidden;
+}
+
+
+/* =========================
+   Browser principal
+========================= */
+
+.preview-browser{
+    width:100%;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.10);
+
+    background:#0d1118;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.45);
+}
+
+
+.preview-browser-bar{
+    height:38px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 14px;
+
+    background:rgba(255,255,255,.045);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+
+.browser-dots{
+    display:flex;
+    gap:6px;
+}
+
+
+.browser-dots span{
+    width:7px;
+    height:7px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.25);
+}
+
+
+.browser-dots span:first-child{
+    background:var(--pink);
+}
+
+
+.browser-dots span:last-child{
+    background:var(--green);
+}
+
+
+.browser-url{
+    margin:auto;
+
+    padding-right:36px;
+
+    font-size:.65rem;
+
+    color:var(--text-secondary);
+
+    opacity:.65;
+
+    letter-spacing:.5px;
+}
+
+
+/* =========================
+   Captura dashboard
+========================= */
+
+.preview-main{
+    width:100%;
+
+    overflow:hidden;
+}
+
+
+.preview-dashboard{
+    display:block;
+
+    width:100%;
+    height:auto;
+}
+
+
+/* =========================
+   Capturas secundarias
+========================= */
+
+.preview-secondary{
+    position:absolute;
+
+    width:46%;
+
+    padding:6px;
+
+    border-radius:12px;
+
+    background:#111720;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.5);
+
+    overflow:hidden;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease;
+}
+
+
+.preview-secondary img{
+    display:block;
+
+    width:100%;
+    height:auto;
+
+    border-radius:8px;
+}
+
+
+.preview-secondary:hover{
+    transform:translateY(-6px) scale(1.02);
+
+    border-color:rgba(142,247,184,.35);
+
+    z-index:5;
+}
+
+
+/* Tracking abajo izquierda */
+
+.preview-tracking{
+    left:2px;
+    bottom:12px;
+
+    transform:rotate(-2deg);
+}
+
+
+.preview-tracking:hover{
+    transform:
+        rotate(-2deg)
+        translateY(-6px)
+        scale(1.02);
+}
+
+
+/* Detalle paquete abajo derecha */
+
+.preview-package{
+    right:2px;
+    bottom:0;
+
+    transform:rotate(2deg);
+}
+
+
+.preview-package:hover{
+    transform:
+        rotate(2deg)
+        translateY(-6px)
+        scale(1.02);
+}
+
+
+/* =========================
+   Labels
+========================= */
+
+.preview-label{
+    position:absolute;
+
+    top:12px;
+    left:12px;
+
+    z-index:2;
+
+    padding:5px 9px;
+
+    border-radius:999px;
+
+    background:rgba(11,15,23,.88);
+
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    color:var(--text);
+
+    font-size:.6rem;
+    font-weight:600;
+
+    letter-spacing:.5px;
 }
 
 
