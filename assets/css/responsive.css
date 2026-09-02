@@ -10,15 +10,6 @@
         display:flex;
         justify-content:center;
     }
-
-    .project-card {
-        grid-template-columns: 1fr;
-    }
-
-    .project-image {
-        width:100%;
-        min-height:180px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -86,21 +77,6 @@
         font-size:0.85rem;
     }
 
-    .project-card {
-        grid-template-columns:1fr;
-        gap:1.25rem;
-        padding:1.25rem;
-    }
-
-    .project-image {
-        max-width:none;
-        min-height:160px;
-    }
-
-    .project-info h3 {
-        margin-top:0;
-    }
-
     .contact-card {
         padding:1.25rem;
     }
@@ -156,14 +132,5 @@
         width:180px;
         height:180px;
         font-size:3.4rem;
-    }
-
-    .project-image {
-        min-height:140px;
-    }
-
-    .project-links {
-        flex-direction:column;
-        align-items:flex-start;
     }
 }
